@@ -1,16 +1,8 @@
 import "./styles/main.scss";
 
-import AsyncItem1 from './AsyncItem1.jsx';
-
-function Component1(props) {
-  return (
-    <div>
-      <AsyncItem1 />
-    </div>
-  );
-}
+import Home from "./Home.jsx";
 
 ReactDOM.render(
-  <Component1 />,
+  <Home />,
   document.getElementById('root')
 );
