@@ -103,7 +103,7 @@ function Home(props) {
     { "class": "row" },
     React.createElement(
       "div",
-      { "class": "col-sm-12" },
+      { "class": "col-sm-12 rkused" },
       "Home"
     )
   );
