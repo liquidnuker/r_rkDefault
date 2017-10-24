@@ -9,10 +9,8 @@ const extractCSS = new ExtractTextPlugin('../[name].bundle.css');
 
 module.exports = {
   context: path.resolve(__dirname, './src'),
-  entry: {
-    index: './index.jsx'
-    // vendor: ['jquery', 'lodash']
-  },
+  entry: ['babel-polyfill', './index.jsx'],
+  // entry: ['./index.jsx'],
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: "dist/",
@@ -40,20 +38,12 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        options: {
-          presets: ['react', 'env'],
-          plugins: ['transform-runtime']
-        },
         exclude: /node_modules/
       },
       // babel jsx
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-        options: {
-          presets: ['react', 'env'],
-          plugins: ['transform-runtime']
-        },
         exclude: /node_modules/
       }
     ]
