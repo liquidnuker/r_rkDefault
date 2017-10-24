@@ -9,8 +9,9 @@ const extractCSS = new ExtractTextPlugin('../[name].bundle.css');
 
 module.exports = {
   context: path.resolve(__dirname, './src'),
-  entry: ['babel-polyfill', './index.jsx'],
-  // entry: ['./index.jsx'],
+  // Map, Set, requestAnimationFrame <IE11 polyfill
+  // entry: ['babel-polyfill', './index.jsx'],
+  entry: ['./index.jsx'],
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: "dist/",
