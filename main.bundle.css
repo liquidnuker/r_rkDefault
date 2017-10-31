@@ -63,6 +63,15 @@ h1 {
   margin: 0.67em 0;
 }
 
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
 html [type="button"],[type="reset"],[type="submit"] {
   -webkit-appearance: button;
 }
