@@ -1,8 +1,11 @@
 import "./styles/main.scss";
 
-import Home from "./components/Home.jsx";
+// router with route config
+import "./components/Home+Router.jsx";
 
-ReactDOM.render(
-  <Home />,
-  document.getElementById('root')
-);
+// default
+// import Home from "./components/Home.jsx";
+// ReactDOM.render(  
+//   <Home />,
+//   document.getElementById('root')
+// );
