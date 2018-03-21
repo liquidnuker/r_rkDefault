@@ -3,6 +3,10 @@ notes.txt
 *.glue
 temp
 
+##
+uploads
+connect.php
+
 ### OSX ###
 *.DS_Store
 .AppleDouble
