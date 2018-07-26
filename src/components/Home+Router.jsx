@@ -137,8 +137,9 @@ const RouteWithSubRoutes = (route) => (
   )}/>
 )
 
-const Home_Router = () => (
-  <Router>
+export default function Home_Router() {
+  return(
+    <Router>
     <div>
       <p>Main Linker</p>
       <ul>
@@ -161,12 +162,13 @@ const Home_Router = () => (
 
     </div>
   </Router>
-)
+  );
+}
 
-ReactDOM.render(
-  <Home_Router />,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <Home_Router />,
+//   document.getElementById('root')
+// );
 
 
 
