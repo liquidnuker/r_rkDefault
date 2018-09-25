@@ -53,6 +53,14 @@
   margin: 6px;
 }
 
+%margin--8 {
+  margin: 8px;
+}
+
+%margin--10 {
+  margin: 10px;
+}
+
 %margin-top--4 {
   margin-top: 4px;
 }
@@ -66,6 +74,8 @@
   margin-right: auto;
 }
 
+// 
+// ==================================================/
 %padd--4 {
   padding: 4px;
 }
@@ -74,20 +84,12 @@
   padding: 6px;
 }
 
-%padd-top--4 {
-  padding-top: 4px;
+%padd--8 {
+  padding: 8px;
 }
 
-%padd-top--6 {
-  padding-top: 6px;
-}
-
-%padd-bottom--4 {
-  padding-bottom: 4px;
-}
-
-%padd-bottom--6 {
-  padding-bottom: 6px;
+%padd--10 {
+  padding: 10px;
 }
 
 // 
